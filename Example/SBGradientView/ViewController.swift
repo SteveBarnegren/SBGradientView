@@ -11,7 +11,7 @@ import SBGradientView
 
 class ViewController: UIViewController {
     
-    let gradientView = GradientView(direction: .fromTop)
+    let gradientView = GradientView(direction: .fromTop, colors: [UIColor.red, UIColor.orange, UIColor.green, UIColor.blue])
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,9 +1,9 @@
 {
   "name": "SBGradientView",
   "version": "0.1.0",
-  "summary": "A short description of SBGradientView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SBGradientView",
+  "summary": "Convenient UIView wrapper around CAGradientLayer",
+  "description": "It's waaaaaayyyyy too much work to make a gradient on iOS, so I made this wrapper to make my life easier",
+  "homepage": "https://github.com/SteveBarnegren/SBGradientView",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,15 @@
     "Steve Barnegren": "steve.barnegren@himumsaiddad.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SBGradientView.git",
+    "git": "https://github.com/SteveBarnegren/SBGradientView.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "SBGradientView/Classes/**/*"
+  "source_files": "SBGradientView/**/*",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ]
 }

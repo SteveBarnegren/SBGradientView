@@ -9,34 +9,23 @@
 Pod::Spec.new do |s|
   s.name             = 'SBGradientView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SBGradientView.'
+  s.summary          = 'Convenient UIView wrapper around CAGradientLayer'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+It's waaaaaayyyyy too much work to make a gradient on iOS, so I made this wrapper to make my life easier
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/SBGradientView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/SteveBarnegren/SBGradientView'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Steve Barnegren' => 'steve.barnegren@himumsaiddad.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/SBGradientView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/SteveBarnegren/SBGradientView.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/SteveBarnegren'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SBGradientView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SBGradientView' => ['SBGradientView/Assets/*.png']
-  # }
+  s.source_files = 'SBGradientView/**/*'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'MapKit'
 end

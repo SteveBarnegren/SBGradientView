@@ -9,7 +9,7 @@ public class GradientView : UIView {
         case fromLeft
         case fromRight
     }
-
+    
     // MARK: - Properties
     let gradientLayer = CAGradientLayer()
     let direction: Direction
@@ -26,16 +26,22 @@ public class GradientView : UIView {
         // Init Super
         super.init(frame: .zero)
         
+        // Setup
+        setup()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setup() {
+        
         // Background Color
         backgroundColor = UIColor.clear
         
         // Add gradient layer
         layer.addSublayer(gradientLayer)
         updateGradientLayer()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - Layout
@@ -68,6 +74,7 @@ public class GradientView : UIView {
         case .fromRight:
             gradientLayer.startPoint = CGPoint(x: 1, y: 0.5)
             gradientLayer.endPoint = CGPoint(x: 0, y: 0.5)
+        }
     }
     
     func updateColors() {
@@ -85,7 +92,6 @@ public class GradientView : UIView {
         
         assert(colors.count > 1, "A gradient cannot be constructed with less than two colors")
         
-        // For now, we just support linear distibution!
         var locations = [Double]()
         
         locations.append(0)
@@ -98,11 +104,8 @@ public class GradientView : UIView {
         for value in locations {
             nsNumberLocations.append(NSNumber(value: value))
         }
-    
+        
     }
-    
-    
-    
     
 }
 

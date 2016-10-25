@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		11D79B0E8183369AFB538538C43E03EE /* Pods-SBGradientView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 938600BA6ACEEDEB444EFB24A100F688 /* Pods-SBGradientView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19F914AD89F8156A6FF6E592C5DC2F10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */; };
 		3542FB4762F0D0A51BF5506978FC81CE /* SBGradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D05360E5C3DC954694A2C6FDD39D08A2 /* SBGradientView-dummy.m */; };
-		5E195E1F3CF1A59125F41FD0A8B46A20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		771FD9967B362B74986B9C128BEACEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5E195E1F3CF1A59125F41FD0A8B46A20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */; };
+		771FD9967B362B74986B9C128BEACEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */; };
 		A300D5060B276FCB6807C61F4E316999 /* SBGradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA20395F6D9A424B01E491CD5E10CA5 /* SBGradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACE1F2DA74220923DCD537D85AFD1842 /* Pods-SBGradientView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF9D2C594471EAA7561A180E1A5CB111 /* Pods-SBGradientView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2145C9833BDE9FAA2BB8E77CD6238E1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9080DF67899819077B65AE3B51D34126 /* GradientView.swift */; };
+		B2145C9833BDE9FAA2BB8E77CD6238E1 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB53877709EB5F028378B85B7CD0F4B5 /* GradientView.swift */; };
+		C32A29370F80468CD98FC882EB4F902B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F915CAD7A4DC99C94A7822844D8867 /* UIKit.framework */; };
 		D116EDC0473BA2C933F24F35DF4F3E0F /* Pods-SBGradientView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3728BB196466812F637B087F0CDF0A2D /* Pods-SBGradientView_Example-dummy.m */; };
-		F042E1CCA25984D47598F7E80E2C57A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		F0581C664A6C34F22EA1549B0DB64218 /* Pods-SBGradientView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE57F03347CF1E9FFBEF0B7C7A8FF9 /* Pods-SBGradientView_Tests-dummy.m */; };
+		F53C1B7B62BB423FC4D8609164589C01 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A5BACAEB2D40A04637B26529345DA0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,22 +39,24 @@
 		55DC7606A6E2B3B42394DA944078DB70 /* Pods-SBGradientView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SBGradientView_Example-resources.sh"; sourceTree = "<group>"; };
 		5805EEB43886809F8425B757A0438315 /* Pods-SBGradientView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SBGradientView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5B9F55E987E0A5B8F265FD61145552BF /* SBGradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SBGradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74F915CAD7A4DC99C94A7822844D8867 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7A6A8EC17BBE9C917BB26F88659F8049 /* Pods-SBGradientView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SBGradientView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		902098098306FEDDF965F84E4751A13C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9080DF67899819077B65AE3B51D34126 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		938600BA6ACEEDEB444EFB24A100F688 /* Pods-SBGradientView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SBGradientView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97C23C56C6FAAFCF6AAA4A643514D1E3 /* Pods-SBGradientView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SBGradientView_Example.modulemap"; sourceTree = "<group>"; };
 		9CE1F583B29863CF06324686ED413C67 /* Pods-SBGradientView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SBGradientView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A241D0E6125AD1BE48FD58D97417E254 /* Pods-SBGradientView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SBGradientView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5A5BACAEB2D40A04637B26529345DA0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		A6C0143F2FDE86E38AD7E3D697C84C11 /* Pods_SBGradientView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBGradientView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD00AA1A11A86D283DF6C8961CA3447C /* Pods-SBGradientView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SBGradientView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB53877709EB5F028378B85B7CD0F4B5 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		BB85077F9AB9A2F4B1EC5F8C36CC412E /* SBGradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SBGradientView.modulemap; sourceTree = "<group>"; };
 		BE4F0BE2780CD2B7DE955C608D23B02E /* Pods-SBGradientView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SBGradientView_Tests.modulemap"; sourceTree = "<group>"; };
 		BFE48D25EE41F39CB6B108703642AC8D /* Pods_SBGradientView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBGradientView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18C052553357063C427FE79553AD5A0 /* Pods-SBGradientView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SBGradientView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CAEE57F03347CF1E9FFBEF0B7C7A8FF9 /* Pods-SBGradientView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SBGradientView_Tests-dummy.m"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CE1972A9E13DA238B96875B579B22845 /* SBGradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SBGradientView-prefix.pch"; sourceTree = "<group>"; };
 		D05360E5C3DC954694A2C6FDD39D08A2 /* SBGradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SBGradientView-dummy.m"; sourceTree = "<group>"; };
 		E0C153486123EC28C09B0CB16DCA5DC0 /* SBGradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SBGradientView.xcconfig; sourceTree = "<group>"; };
@@ -65,11 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3661EAE94002E7BEABE8F8E23F2AE4C7 /* Frameworks */ = {
+		99EDE4B33CEF55AA223CFCC8D165B60B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F042E1CCA25984D47598F7E80E2C57A1 /* Foundation.framework in Frameworks */,
+				19F914AD89F8156A6FF6E592C5DC2F10 /* Foundation.framework in Frameworks */,
+				F53C1B7B62BB423FC4D8609164589C01 /* MapKit.framework in Frameworks */,
+				C32A29370F80468CD98FC882EB4F902B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +101,19 @@
 		017B98ADB2E40D184DFFD8374790EE1E /* SBGradientView */ = {
 			isa = PBXGroup;
 			children = (
-				D115EB6BE9BE7C3BE2878E94C8339121 /* SBGradientView */,
+				C0E2830BBF77AB342E7618B37A97B148 /* SBGradientView */,
 				B2FB3A4001AE78972D41784EC26AA036 /* Support Files */,
 			);
 			name = SBGradientView;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				509C922CFB50FCD3DB8A08209AD57DDE /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3DA2E003854CBFB37C80BFFBEA572A16 /* Development Pods */ = {
@@ -108,6 +122,16 @@
 				017B98ADB2E40D184DFFD8374790EE1E /* SBGradientView */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		509C922CFB50FCD3DB8A08209AD57DDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				63AE25E005002286C8AD2A3AEB652EF0 /* Foundation.framework */,
+				A5A5BACAEB2D40A04637B26529345DA0 /* MapKit.framework */,
+				74F915CAD7A4DC99C94A7822844D8867 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		563F0EFCB369574FBA07D04776D70DE5 /* Targets Support Files */ = {
@@ -119,20 +143,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				3DA2E003854CBFB37C80BFFBEA572A16 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				ACFDEA2D9FDAD2A93F632F8970931B25 /* Products */,
 				563F0EFCB369574FBA07D04776D70DE5 /* Targets Support Files */,
 			);
@@ -198,28 +214,12 @@
 			path = "Example/Pods/Target Support Files/SBGradientView";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C0E2830BBF77AB342E7618B37A97B148 /* SBGradientView */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D115EB6BE9BE7C3BE2878E94C8339121 /* SBGradientView */ = {
-			isa = PBXGroup;
-			children = (
-				D24DACE4D699F78CC35628B51C44368F /* Classes */,
+				BB53877709EB5F028378B85B7CD0F4B5 /* GradientView.swift */,
 			);
 			path = SBGradientView;
-			sourceTree = "<group>";
-		};
-		D24DACE4D699F78CC35628B51C44368F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				9080DF67899819077B65AE3B51D34126 /* GradientView.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +274,7 @@
 			buildConfigurationList = 62E9F306D9C3E3559F0FB2E88750358F /* Build configuration list for PBXNativeTarget "SBGradientView" */;
 			buildPhases = (
 				F46CA656723BAE36DF00EA217A87EE56 /* Sources */,
-				3661EAE94002E7BEABE8F8E23F2AE4C7 /* Frameworks */,
+				99EDE4B33CEF55AA223CFCC8D165B60B /* Frameworks */,
 				C4D12755A04814F0A049FA023537B1BA /* Headers */,
 			);
 			buildRules = (
