@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SBGradientView_Example' do
+  pod 'SBGradientView', :path => '../'
+
+  target 'SBGradientView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
