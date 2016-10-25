@@ -7,17 +7,21 @@
 //
 
 import UIKit
+import SBGradientView
 
 class ViewController: UIViewController {
+    
+    let gradientView = GradientView(direction: .fromTop)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.addSubview(gradientView)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        gradientView.frame = view.bounds
     }
 
 }
