@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/SBGradientView.svg?style=flat)](http://cocoapods.org/pods/SBGradientView)
 [![Platform](https://img.shields.io/cocoapods/p/SBGradientView.svg?style=flat)](http://cocoapods.org/pods/SBGradientView)
 
-Convinient UIView wrapper around CAGradientLayer
+Convenient UIView wrapper around CAGradientLayer
 
 ## How to use
 
