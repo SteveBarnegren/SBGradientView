@@ -16,8 +16,7 @@ public class GradientView : UIView {
     let colors: [UIColor]
     
     public init(direction: Direction,
-                colors: [UIColor] = [UIColor.black, UIColor.clear]
-        ) {
+                colors: [UIColor] = [UIColor.black, UIColor.clear]) {
         
         // Set Properties
         self.direction = direction
@@ -41,6 +40,7 @@ public class GradientView : UIView {
         
         // Add gradient layer
         layer.addSublayer(gradientLayer)
+        gradientLayer.backgroundColor = UIColor.clear.cgColor
         updateGradientLayer()
     }
     
@@ -79,9 +79,14 @@ public class GradientView : UIView {
     
     func updateColors() {
         
+        // UIColor.clear doesn't display correctly, so we can recreate it
+        let correctedColors = colors.map {
+            $0 === UIColor.clear ? UIColor.init(white: 1, alpha: 0) : $0
+        }
+        
         var cgColors = [Any]()
         
-        for color in colors {
+        for color in correctedColors {
             cgColors.append(color.cgColor)
         }
         
