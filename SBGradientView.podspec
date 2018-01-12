@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SBGradientView'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Convenient UIView wrapper around CAGradientLayer'
 
 
@@ -22,9 +22,9 @@ It's waaaaaayyyyy too much work to make a gradient on iOS, so I made this wrappe
   s.source           = { :git => 'https://github.com/SteveBarnegren/SBGradientView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/SteveBarnegren'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SBGradientView/**/*'
+  s.source_files = 'SBGradientView/**/*.swift'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MapKit'
