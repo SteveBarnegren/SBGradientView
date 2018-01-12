@@ -1,6 +1,0 @@
-framework module SBGradientView {
-  umbrella header "SBGradientView-umbrella.h"
-
-  export *
-  module * { export * }
-}
