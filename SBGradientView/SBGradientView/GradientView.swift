@@ -11,37 +11,35 @@ public class GradientView : UIView {
     }
     
     // MARK: - Properties
-    let gradientLayer = CAGradientLayer()
-    let direction: Direction
-    let colors: [UIColor]
+    
+    public var direction: Direction {
+        didSet { updateGradient() }
+    }
+    
+    public var colors: [UIColor] {
+        didSet { updateGradient() }
+    }
+    
+    private let gradientLayer = CAGradientLayer()
     
     public init(direction: Direction,
                 colors: [UIColor] = [UIColor.black, UIColor.clear]) {
         
-        // Set Properties
         self.direction = direction
         self.colors = colors
         
-        // Init Super
         super.init(frame: .zero)
         
-        // Setup
-        setup()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func setup() {
-        
-        // Background Color
         backgroundColor = UIColor.clear
         
         // Add gradient layer
         layer.addSublayer(gradientLayer)
         gradientLayer.backgroundColor = UIColor.clear.cgColor
-        updateGradientLayer()
+        updateGradient()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - Layout
@@ -53,13 +51,12 @@ public class GradientView : UIView {
     
     // MARK: - Update Gradient
     
-    func updateGradientLayer() {
+    private func updateGradient() {
         updateStartAndEndPoints()
         updateColors()
-        updateLocations()
     }
     
-    func updateStartAndEndPoints() {
+    private func updateStartAndEndPoints() {
         
         switch direction {
         case .fromTop:
@@ -77,11 +74,11 @@ public class GradientView : UIView {
         }
     }
     
-    func updateColors() {
+    private func updateColors() {
         
         // UIColor.clear doesn't display correctly, so we can recreate it
         let correctedColors = colors.map {
-            $0 === UIColor.clear ? UIColor.init(white: 1, alpha: 0) : $0
+            $0 === UIColor.clear ? UIColor.init(white: 0.5, alpha: 0) : $0
         }
         
         var cgColors = [Any]()
@@ -91,25 +88,6 @@ public class GradientView : UIView {
         }
         
         self.gradientLayer.colors = cgColors
-    }
-    
-    func updateLocations() {
-        
-        assert(colors.count > 1, "A gradient cannot be constructed with less than two colors")
-        
-        var locations = [Double]()
-        
-        locations.append(0)
-        for i in 1..<colors.count {
-            locations.append( Double(i) / Double(colors.count-1) )
-        }
-        
-        // Convert to NSNumber
-        var nsNumberLocations = [NSNumber]()
-        for value in locations {
-            nsNumberLocations.append(NSNumber(value: value))
-        }
-        
     }
     
 }

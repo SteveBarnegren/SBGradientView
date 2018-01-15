@@ -95,9 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				67C91ECD2008E66000619F6F /* SBGradientView.xcodeproj */,
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SBGradientView */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD11AFB9204008FA782 /* Products */,
 				67C91ED32008E66E00619F6F /* Frameworks */,
 			);
